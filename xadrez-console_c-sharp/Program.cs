@@ -13,7 +13,7 @@ namespace xadrez_console_c_sharp
 
             Tabuleiro tab = new Tabuleiro(8, 8);
 
-            Console.WriteLine(pos.ToString());
+            Tela.ImprimirTabuleiro(tab);
         }
     }
 }

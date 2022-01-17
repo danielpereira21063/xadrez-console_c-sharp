@@ -17,5 +17,10 @@ namespace TabuleiroJogo
             this.Colunas = colunas;
             Pecas = new Peca[linhas, colunas];
         }
+
+        public Peca RetornarPeca(int linha, int coluna)
+        {
+            return Pecas[linha, coluna];
+        }
     }
 }
