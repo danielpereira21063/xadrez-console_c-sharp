@@ -10,17 +10,16 @@ namespace xadrez_console_c_sharp
         {
             try
             {
-                //Tabuleiro tab = new Tabuleiro(8, 8);
+                Tabuleiro tab = new Tabuleiro(8, 8);
 
-                //tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                //tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 0));
-                //tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
+                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 0));
+                tab.ColocarPeca(new Bispo(tab, Cor.Branca), new Posicao(2, 4));
+                tab.ColocarPeca(new Bispo(tab, Cor.Branca), new Posicao(4, 7));
+                tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(5, 1));
+                tab.ColocarPeca(new Rei(tab, Cor.Branca), new Posicao(2, 1));
 
-                //Tela.ImprimirTabuleiro(tab);
-
-                PosicaoXadrez pos = new PosicaoXadrez('e', 1);
-
-                Console.WriteLine(pos.ToPosicao());
+                Tela.ImprimirTabuleiro(tab);
 
                 Console.ReadLine();
             }
