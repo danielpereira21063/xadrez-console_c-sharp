@@ -1,5 +1,6 @@
 ﻿using System;
 using TabuleiroJogo;
+using Xadrez;
 
 namespace xadrez_console_c_sharp
 {
@@ -7,13 +8,15 @@ namespace xadrez_console_c_sharp
     {
         static void Main(string[] args)
         {
-            Posicao pos;
-
-            pos = new Posicao(3, 4);
-
             Tabuleiro tab = new Tabuleiro(8, 8);
 
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
+            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
+
             Tela.ImprimirTabuleiro(tab);
+
+            Console.ReadLine();
         }
     }
 }

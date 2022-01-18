@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TabuleiroJogo
+﻿namespace TabuleiroJogo
 {
     enum Cor
     {

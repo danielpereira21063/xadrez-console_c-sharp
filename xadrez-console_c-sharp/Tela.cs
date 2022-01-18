@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using TabuleiroJogo;
 
 namespace xadrez_console_c_sharp

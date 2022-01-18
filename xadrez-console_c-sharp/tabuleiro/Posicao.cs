@@ -11,7 +11,6 @@
             this.Coluna = coluna;
         }
 
-
         public override string ToString()
         {
             return $"Linha:{ Linha }\nColuna: {Coluna}";
