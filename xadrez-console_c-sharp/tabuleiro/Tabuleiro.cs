@@ -45,6 +45,20 @@ namespace TabuleiroJogo
             peca.Posicao = pos;
         }
 
+        public Peca RetirarPeca(Posicao pos)
+        {
+            if(RetornarPeca(pos) == null)
+            {
+                return null;
+            }
+
+            Peca aux = RetornarPeca(pos);
+            aux.Posicao = null;
+            Pecas[pos.Linha, pos.Coluna] = null;
+
+            return aux;
+        }
+
         public bool PosicaoValida(Posicao pos)
         {
             if (pos.Linha < 0 || pos.Linha >= Linhas || pos.Coluna < 0 || pos.Coluna >= Colunas)
