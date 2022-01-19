@@ -11,6 +11,12 @@
             this.Coluna = coluna;
         }
 
+        public void DefinirValores(int linha, int coluna)
+        {
+            Coluna = coluna;
+            Linha = linha;
+        }
+
         public override string ToString()
         {
             return $"Linha:{ Linha }\nColuna: {Coluna}";
